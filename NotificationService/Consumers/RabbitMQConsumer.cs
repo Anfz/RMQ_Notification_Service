@@ -10,7 +10,7 @@ namespace NotificationService
     public class RabbitMQConsumer : IQueueConsumer
     {
 
-        private const string EXCHANGE_NAME = "com.cwbeaver_exchange";
+        private const string EXCHANGE_NAME = "com.chriswbeaver_exchange";
         private const string QUEUE_NAME = "NotificationTopic_Queue";
 
         private static ConnectionFactory _factory;

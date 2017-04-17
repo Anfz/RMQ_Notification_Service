@@ -10,6 +10,9 @@ namespace NotificationService
     {
         static void Main(string[] args)
         {
+            IQueueConsumer client = new RabbitMQConsumer();
+            client.CreateConnection();
+            client.ProcessMessages(); 
         }
     }
 }
